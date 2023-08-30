@@ -41,6 +41,11 @@ wkhtmltopdf --version
 ```
 su - odoo15
 ```
+** lệnh này sẽ truy cập vào postgresql bằng user odoo15 nhưng sẽ yêu cầu password
+** lệnh đúng sẽ là
+```
+sudo su - odoo15
+```
 
 - Tải xuống kho lưu trữ (đặt vào `thư mục /opt/`) Odoo15 từ Github theo lệnh:
 ```
