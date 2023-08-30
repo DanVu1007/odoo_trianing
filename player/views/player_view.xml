@@ -1,0 +1,16 @@
+<odoo>
+    <record id="player_view_tree" model="ir.ui.view">
+        <field name="name">player.view.tree</field>
+        <field name="model">player</field>
+        <field name="arch" type="xml">
+            <tree string="Players">
+                <field name="name" />
+                <field name="country" />
+                <field name="gender" />
+                <field name="position" />
+                <field name="height" />
+                <field name="weight" />
+            </tree>
+        </field>
+    </record>
+</odoo>
