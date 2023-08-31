@@ -24,6 +24,7 @@
 
     # always loaded
     'data': [
+        'views/player_view.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
