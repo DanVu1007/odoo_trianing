@@ -5,6 +5,7 @@
         <field name="arch" type="xml">
             <tree string="Players">
                 <field name="name" />
+                <field name="image" />
                 <field name="country" />
                 <field name="gender" />
                 <field name="position" />
