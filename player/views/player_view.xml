@@ -50,7 +50,19 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="player_menu" name="player" groups="base.group_user"/>
+    <!-- <menuitem id="player_menu" name="player" groups="base.group_user"/> -->
+    <!-- <menuitem id="player_menu_1" name="player" action="player_action" groups="base.group_user" parent="player_menu"/>  -->
 
-    <menuitem id="player_menu_1" name="player" action="player_action" groups="base.group_user" parent="player_menu"/>
+    <!-- Main menu for "model" -->
+    <record id="player_menu" model="ir.ui.menu">
+        <field name="name">Player</field>
+        <field name="sequence" eval="10" />
+    </record>
+
+    <record id="player_menu_main" model="ir.ui.menu">
+        <field name="name">Player</field>
+        <field name="sequence" eval="10" />
+        <field name="action" ref="player_action" />
+        <field name="parent_id" ref="player_menu" />
+    </record>
 </odoo>
