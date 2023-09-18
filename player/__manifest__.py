@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "player",
+    'name': "Player",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -24,7 +24,9 @@
 
     # always loaded
     'data': [
-        'views/player_view.xml'
+        'wizard/transient_model_view.xml',
+        'views/player_view.xml',
+        'views/base_model_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
